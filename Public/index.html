@@ -9,14 +9,24 @@
       <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
       <script src="addtohomescreen.js"></script>
 
-      <script>
-      addToHomescreen();
-      </script>
+
+
   </head>
   <body>
       hihihihihihi
-      <script type="main.js">
+      <div class = "hello">HelloWorld</div>
+      <div class = "navigator"></div>
+  </body>
+      <script>
+      addToHomescreen();
+      document.querySelector('.navigator').textContent = 'window navigator is:'
+      + window.navigator.standalone
+
+      if(window.navigator.standalone) {
+        document.querySelector('body').style.backgroundColor = 'green'
+        
+      }
 
       </script>
-  </body>
+
 </html>

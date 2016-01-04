@@ -15,7 +15,6 @@
       hihihihihihi
       <div class = "hello">HelloWorld</div>
       <div class = "navigator"></div>
-
       <button onclick="notifyMe()">Notify me!</button>
 
   </body>
@@ -29,6 +28,8 @@
         document.querySelector('body').style.backgroundColor = 'green'
       }
 
+      
+
       function notifyMe() {
       // Let's check if the browser supports notifications
       if (!("Notification" in window)) {
@@ -38,6 +39,7 @@
       // Let's check whether notification permissions have already been granted
       else if (Notification.permission === "granted") {
         // If it's okay let's create a notification
+        console.log('testing');
         var notification = new Notification("Hi there!");
       }
 

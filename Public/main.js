@@ -1,8 +1,10 @@
 var navStandAlone = function standalone () {
 if (window.navigator.standalone === true) {
-return 'NAVIGATOR IS WORKING!!!'
+// return 'NAVIGATOR IS WORKING!!!'
+document.querySelector('body').textcontent = 'SHIT'
 } else {
-return 'not working'
+document.querySelector('body').textcontent = 'NOT SHIT'
+// return 'not working'
 }
 }
 navStandAlone()
